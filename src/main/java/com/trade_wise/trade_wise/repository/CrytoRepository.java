@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CrytoRepository extends JpaRepository<Crypto, String> {
-    Crypto findCryptosById(String id);
-    Crypto findCryptosBySymbol(String symbol);
+    Crypto findCryptoById(String id);
+    Crypto findCryptoBySymbol(String symbol);
 }
